@@ -1,0 +1,78 @@
+/* Global styles */
+body {
+  font-family: 'Proxima Nova', sans-serif; /* Applied Proxima Nova font */
+  font-size: 16px; /* Set font size to 16px */
+  color: rgb(87, 87, 87); /* Text color */
+  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  line-height: 1.8em; /* Line height for readability */
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1200px; /* Set max width */
+  margin: 0 auto;
+  padding: 100px; /* Consistent padding */
+  text-align: center;
+}
+
+/* Logo styles */
+.logo {
+  height: 8em; /* Logo size */
+  padding: 2em; /* Padding around the logo */
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Card styles */
+.card {
+  padding: 2rem; /* Padding inside cards */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Border with slight transparency */
+  border-radius: 0.5rem; /* Border radius for smooth corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Shadow for depth */
+}
+
+/* Header styles */
+h1 {
+  font-family: 'Proxima Nova', sans-serif; /* Proxima Nova font */
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: 400; /* Normal weight */
+  line-height: 1.8em; /* Line height for spacing */
+  color: rgb(34, 34, 34); /* Dark color for h1 */
+  margin: 20px 0; /* Top and bottom margin */
+  padding: 20px; /* Padding around the heading */
+  border: 2px solid rgba(0, 0, 0, 0.1); /* Border around h1 */
+  border-radius: 0.5rem; /* Border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Shadow for subtle depth */
+}
+
+/* Paragraph styles */
+p {
+  font-family: 'Proxima Nova', sans-serif; /* Applied Proxima Nova font */
+  font-size: 1rem; /* Standard font size */
+  line-height: 1.8em; /* Line height for spacing */
+  color: rgb(87, 87, 87); /* Text color for paragraph */
+  margin-bottom: 1.5rem; /* Margin at the bottom */
+  padding: 15px; /* Padding around paragraph */
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Border with slight transparency */
+  border-radius: 0.5rem; /* Consistent border radius */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/* Adjustments for specific elements */
+.read-the-docs {
+  color: #888; /* Lighter color for the text */
+  font-family: 'Proxima Nova', sans-serif; /* Ensure Proxima Nova font */
+  font-size: 1rem;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1); /* Border with slight transparency */
+  border-radius: 0.5rem; /* Consistent border radius */
+}
