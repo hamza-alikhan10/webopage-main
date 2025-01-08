@@ -1,18 +1,26 @@
 /* Global styles */
 body {
-  font-family: 'Proxima Nova', sans-serif; /* Applied Proxima Nova font */
-  font-size: 16px; /* Set font size to 16px */
-  color: rgb(87, 87, 87); /* Text color */
-  background-color: rgba(255, 255, 255, 0); /* Transparent background */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: rgb(87, 87, 87);
+  background-color: rgba(255, 255, 255, 0);
   line-height: 1.8em; /* Line height for readability */
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  text-size-adjust: 100%;
+  text-transform: none;
+  unicode-bidi: isolate;
 }
 
 #root {
   max-width: 1200px; /* Set max width */
   margin: 0 auto;
-  padding: 100px; /* Consistent padding */
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -42,8 +50,8 @@ body {
 
 /* Header styles */
 h1 {
-  font-family: 'Proxima Nova', sans-serif; /* Proxima Nova font */
-  font-size: 2.5rem; /* Larger font size */
+  font-family: 'Poppins', 'Montserrat'; /* Proxima Nova font */
+  font-size: 2.5rem; 
   font-weight: 400; /* Normal weight */
   line-height: 1.8em; /* Line height for spacing */
   color: rgb(34, 34, 34); /* Dark color for h1 */
@@ -56,7 +64,7 @@ h1 {
 
 /* Paragraph styles */
 p {
-  font-family: 'Proxima Nova', sans-serif; /* Applied Proxima Nova font */
+  font-family: 'Montserrat', sans-serif; /* Applied Proxima Nova font */
   font-size: 1rem; /* Standard font size */
   line-height: 1.8em; /* Line height for spacing */
   color: rgb(87, 87, 87); /* Text color for paragraph */

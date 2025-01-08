@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: 'PORTFOLIO', href: '/portfolio' },
     { name: 'BIOGRAPHY', href: '/biography' },
     { name: 'MAPS', href: '/#maps' },
-    { name: 'CONTACT', href: '/#contact' },
+    { name: 'CONTACT', href: '/contact' },
   ];
 
   const handleNavigation = (href: string) => {
@@ -27,26 +27,30 @@ const Navbar = () => {
     <div>
       <nav className="bg-transparent py-4 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center space-y-3">
- {/* Logo */}
-<div className="mt-8 mb-4">
-  <a
-    href="/"
-    className="text-[73px] uppercase tracking-[1px] text-black-800"
-    style={{
-      fontFamily: 'Poppins, sans-serif',
-      fontWeight: 400, // Font weight 400
-      fontSize: '73px', // Fixed font size
-      textTransform: 'uppercase', // Uppercase text
-      letterSpacing: '1px', // Adjusted spacing
-      lineHeight: '87.6px', // Updated line height
-    }}
-  >
-    FORM FORGE
-  </a>
-</div>
-
-
+          <div className="flex flex-col items-center space-y-3">
+            {/* Logo */}
+            <div className="mt-8 mb-4">
+              <a
+                href="/"
+                className="text-[73px] uppercase tracking-[1px] text-black-800"
+                style={{
+                  fontFamily: '"Josefin Sans", "Poppins"',
+                  fontWeight: 400,
+                  fontSize: '73px',
+                  height: 'auto',
+                  textTransform: 'uppercase',
+                  letterSpacing: '1px',
+                  lineHeight: '87.6px',
+                  textAlign: 'center',
+                  textDecorationLine: 'none',
+                  textDecorationStyle: 'solid',
+                  textSizeAdjust: '100%',
+                  width: 'auto',
+                }}
+              >
+                FORMFORGE
+              </a>
+            </div>
 
             {/* Mobile menu button */}
             <div className="md:hidden absolute right-4 top-4">
@@ -58,34 +62,32 @@ const Navbar = () => {
               </button>
             </div>
 
-           {/* Desktop Navigation */}
-<div className="hidden md:flex items-center justify-center mt-6" id="topNav">
-  {navLinks.map((link) => (
-    <button
-      key={link.name}
-      onClick={() => handleNavigation(link.href)}
-      className="nav-link text-gray-500 hover:text-black px-4 py-2 text-[28px] tracking-[0.4px] font-normal leading-normal transition-all transform duration-300 ease-out"
-    >
-      {link.name}
-    </button>
-  ))}
-</div>
+            {/* Desktop Navigation */}
+            <div className="hidden md:flex items-center justify-center mt-6" id="topNav">
+              {navLinks.map((link) => (
+                <button
+                  key={link.name}
+                  onClick={() => handleNavigation(link.href)}
+                  className="nav-link text-gray-500 hover:text-black px-4 py-2 text-[28px] tracking-[0.4px] font-normal leading-normal transition-all transform duration-300 ease-out"
+                >
+                  {link.name}
+                </button>
+              ))}
+            </div>
 
-<style>{`
-  #topNav {
-    width: 100%;
-    text-align: center;
-  }
-  .nav-link {
-    transition: transform 0.3s ease-out, scale 0.2s ease-out, color 0.3s ease;
-  }
-  .nav-link:hover {
-    transform: translateY(-3px);
-    scale: 1.1;
-    color: black;
-  }
-`}</style>
-
+            <style>{`
+              #topNav {
+                text-align: center;
+              }
+              .nav-link {
+                transition: transform 0.3s ease-out, scale 0.2s ease-out, color 0.3s ease;
+              }
+              .nav-link:hover {
+                transform: translateY(-3px);
+                scale: 1.1;
+                color: black;
+              }
+            `}</style>
 
             {/* Mobile Navigation */}
             {isMenuOpen && (
@@ -108,7 +110,7 @@ const Navbar = () => {
       </nav>
 
       {/* Footer Section */}
-      < footer/>
+      <Footer />
     </div>
   );
 };

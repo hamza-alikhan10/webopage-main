@@ -5,10 +5,9 @@ import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carouse
 import { cn } from "@/lib/utils";
 
 const images = [
-  "/placeholder.svg",
-  "https://source.unsplash.com/random/1200x800?art=1",
-  "https://source.unsplash.com/random/1200x800?art=2",
-  "https://source.unsplash.com/random/1200x800?art=3"
+  "/shivrj_maharaj.png",
+  "/swirl.png",
+  "/Sap_soma.png"
 ];
 
 const Index = () => {
@@ -17,7 +16,7 @@ const Index = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000); // Change image every 5 seconds
+    }, 3000); // Change image every 3 seconds
 
     return () => clearInterval(timer);
   }, []);
@@ -26,22 +25,26 @@ const Index = () => {
     <div className="min-h-screen bg-transparent text-[rgb(87,87,87)] flex flex-col">
       <Navbar />
       
-      <div className="canvas-container flex-grow">
-        <Carousel className="w-full" opts={{ loop: true, align: "center" }}>
+      <div className="canvas-container flex-grow p-4 md:p-8">
+        <Carousel className="w-full max-w-6xl mx-auto" opts={{ loop: true, align: "center" }}>
           <CarouselContent>
             {images.map((src, index) => (
-              <CarouselItem key={index} className="relative">
+              <CarouselItem key={index} className="relative p-2">
                 <div
                   className={cn(
-                    "w-full aspect-[3/2] overflow-hidden rounded-lg",
-                    "transition-transform duration-[5000ms]",
+                    "w-full aspect-[3/2] overflow-hidden rounded-lg shadow-lg",
+                    "transition-all duration-2000 ease-in-out",
                     currentImage === index ? "scale-110" : "scale-100"
                   )}
                 >
                   <img
                     src={src}
                     alt={`Slide ${index + 1}`}
-                    className="w-full h-full object-cover transition-opacity duration-500"
+                    className={cn(
+                      "w-full h-full object-cover",
+                      "transition-opacity duration-1000",
+                      currentImage === index ? "opacity-100" : "opacity-80"
+                    )}
                     loading={index === 0 ? "eager" : "lazy"}
                   />
                 </div>
@@ -49,11 +52,6 @@ const Index = () => {
             ))}
           </CarouselContent>
         </Carousel>
-
-        {/* <div className="text-center mt-8">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">FORM FORGE</h1>
-          <p className="text-xl">Crafting Digital Experiences</p>
-        </div> */}
       </div>
 
       <Footer />

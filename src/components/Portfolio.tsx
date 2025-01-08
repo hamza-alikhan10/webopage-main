@@ -11,21 +11,21 @@ const Portfolio = () => {
   const [selectedImage, setSelectedImage] = useState<ImageData | null>(null);
 
   const images = [
-    '/sitting_elevates.jpg',
+    '/sad_pose.jpg',
     '/nandi_pune.jpg',
     '/sad_pose.jpg',
     '/satyamv_jayte.jpg',
     '/shivrj_maharaj.jpg',
-    '/swirl.jpg',
-    '/swirlll.jpg',
-    '/ragging_stallions.jpg',
+    '/shivrj_maharaj.jpg',
+    '/reception_tble.jpg',
     '/nandi_pune.jpg',
+    '/reception_tble.jpg',
     '/sitting_elevates.jpg',
     '/ant_hill.jpg',
     '/nandi_pune.jpg',
     '/reception_tble.jpg',
-    '/nandi_pune.jpg',
-    '/nandi_pune.jpg',
+    '/reception_tble.jpg',
+    '/shivrj_maharaj.jpg',
     '/sad_pose.jpg',
     '/satyamv_jayte.jpg',
     '/shivrj_maharaj.jpg',
@@ -54,7 +54,7 @@ const Portfolio = () => {
       fontWeight: 400,
       fontStyle: 'normal',
       lineHeight: '1.2em',
-      fontSize: '19px',
+      fontSize: '10px',
       textTransform: 'none',
       textDecoration: 'none',
       textAlign: 'center',
@@ -88,7 +88,7 @@ const Portfolio = () => {
       </div>
 
       {/* Footer Section */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
